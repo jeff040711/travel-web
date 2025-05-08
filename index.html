@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Travel With Me Expeditions</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1.5em 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav li {
+            margin-right: 30px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1em;
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 1px;
+            padding: 5px 10px;
+            transition: color 0.3s ease, background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #f0a500;
+            background-color: #444;
+            border-radius: 5px;
+        }
+
+        .logo img {
+            max-width: 150px;
+            height: auto;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #444;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        .back-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: #333;
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #555;
+        }
+
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+            font-size: 14px;
+        }
+        
+
+        .hidden {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .fade-in {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Scroll to top button styles */
+        #scrollTopBtn {
+            display: none; /* Hidden by default */
+            position: fixed;
+            bottom: 40px;
+            right: 30px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: #f0a500;
+            color: white;
+            cursor: pointer;
+            padding: 12px 16px;
+            border-radius: 50%;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+            transition: background-color 0.3s;
+        }
+
+        #scrollTopBtn:hover {
+            background-color: #d78d00;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-links left">
+                <li><a href="index.html">About</a></li>
+                <li><a href="Destinations.html">Destinations</a></li>
+            </ul>
+            <div class="logo">
+                <a href="STATIC WEBSITE DEVELOPMENT.html">
+                    <img src="TravelWIthMe!LOGO.png" alt="Travel With Me Logo">
+                </a>
+            </div>
+            <ul class="nav-links right">
+                <li><a href="Privacy Policy.html">Privacy Policy</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Who We Are</h2>
+        <p>Travel With Me Expeditions is a premier adventure travel company specializing in guided hiking trips across the Philippines. Our mission is to provide unforgettable experiences by exploring the country’s most stunning landscapes.</p>
+
+        <h2>Our Mission</h2>
+        <p>At Travel With Me Expeditions, we believe in the power of exploration and adventure. Our goal is to:</p>
+        <ul>
+            <li>Connect travelers with nature through immersive experiences.</li>
+            <li>Promote responsible and sustainable tourism.</li>
+            <li>Ensure safety, fun, and enrichment in every journey.</li>
+        </ul>
+
+        <h2>Our Destinations</h2>
+        <ul>
+            <li><strong>Mountain Expeditions</strong> – Climb majestic peaks and witness stunning sunrises.</li>
+            <li><strong>Forest Adventures</strong> – Hike through lush rainforests and discover unique wildlife.</li>
+            <li><strong>Coastal Retreats</strong> – Experience pristine beaches and crystal-clear waters.</li>
+        </ul>
+
+        <h2>Why Choose Us?</h2>
+        <ul>
+            <li><strong>Expert Guides</strong> – Experienced and knowledgeable guides ensure your safety.</li>
+            <li><strong>Small Group Tours</strong> – Personalized experiences for every traveler.</li>
+            <li><strong>Eco-Friendly Practices</strong> – We are committed to preserving nature.</li>
+        </ul>
+
+        <h2>Join Us!</h2>
+        <p>Are you ready for your next adventure? Join Travel With Me Expeditions and embark on a journey filled with excitement, discovery, and breathtaking scenery. Contact us today!</p>
+    </div>
+
+    <footer>
+        &copy; 2025 Travel With Me Expeditions. All rights reserved.
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollTopBtn" title="Go to top">↑ Top</button>
+
+    <script>
+        // Show the button when user scrolls down 300px
+        window.onscroll = function() {
+            let btn = document.getElementById("scrollTopBtn");
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                btn.style.display = "block";
+            } else {
+                btn.style.display = "none";
+            }
+        };
+
+        // Scroll to top smoothly
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Add event listener for the scroll-to-top button
+        document.getElementById("scrollTopBtn").addEventListener("click", scrollToTop);
+    </script>
+</body>
+</html>

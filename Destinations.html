@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel With Me Expeditions - Philippine Destinations</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1.5em 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav li {
+            margin-right: 30px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1em;
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 1px;
+            padding: 5px 10px;
+            transition: color 0.3s ease, background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #f0a500;
+            background-color: #444;
+            border-radius: 5px;
+        }
+
+        .logo img {
+            width: 150px;
+            height: auto;
+        }
+
+        .intro-section {
+            padding: 40px 20px;
+            text-align: center;
+            background-color: #f9f9f9;
+        }
+
+        .intro-section h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        .intro-section p {
+            font-size: 1.2em;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        #destinations h2 {
+            font-size: 2.5em;
+            font-weight: 700;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        #destinations {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .destination {
+            text-align: center;
+            max-width: 300px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .destination:hover {
+            transform: scale(1.02);
+        }
+
+        .destination img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .destination h3 {
+            font-size: 1.5em;
+            font-weight: 700;
+            margin-top: 10px;
+        }
+
+        .destination p {
+            padding: 0 10px;
+        }
+
+        .extra-images {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 10px;
+        }
+
+        .extra-images img {
+            width: 90px;
+            height: 60px;
+            object-fit: cover;
+            border-radius: 5px;
+            transition: opacity 0.3s ease;
+        }
+
+        .extra-images img:hover {
+            opacity: 0.8;
+            cursor: pointer;
+        }
+
+        .destination a {
+            background-color: #f0a500;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+
+        .destination a:hover {
+            background-color: #d78d00;
+        }
+
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+            font-size: 14px;
+        }
+
+        .back-button {
+            display: block;
+            width: 150px;
+            margin: 20px auto;
+            padding: 10px;
+            text-align: center;
+            background-color: #333;
+            color: white;
+            font-size: 1em;
+            font-weight: bold;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #f0a500;
+        }
+
+        /* Scroll to Top Button */
+        #scrollTopBtn {
+            display: none;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: #f0a500;
+            color: white;
+            cursor: pointer;
+            padding: 12px 16px;
+            border-radius: 50%;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+            transition: background-color 0.3s;
+        }
+
+        #scrollTopBtn:hover {
+            background-color: #d78d00;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-links left">
+                <li><a href="index.html">About</a></li>
+                <li><a href="Destinations.html">Destinations</a></li>
+            </ul>
+            <div class="logo">
+                <a href="STATIC WEBSITE DEVELOPMENT.html">
+                    <img src="TravelWIthMe!LOGO.png" alt="Travel With Me Logo">
+                </a>
+            </div>
+            <ul class="nav-links right">
+                <li><a href="Privacy Policy.html">Privacy Policy</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="intro-section">
+            <h1>Welcome to Travel With Me!</h1>
+            <p>Join us as we explore the most breathtaking and culturally rich destinations across the Philippines. Whether you're a nature lover, adventure seeker, or simply looking for peace and paradise — there's a place here for you.</p>
+        </section>
+
+        <section id="destinations">
+            <h2>Explore the Best Destinations in the Philippines</h2>
+            <img src="philippines.jpg" alt="Philippine Destinations" style="width: 100%; height: auto; border-radius: 10px; margin-bottom: 30px;">
+
+            <div class="destination">
+                <img src="Banaue Rice Terraces.jpg" alt="Banaue Rice Terraces">
+                <h3>Banaue Rice Terraces</h3>
+                <p>Marvel at the ancient terraces built by the Ifugao people, an engineering wonder nestled in the Cordillera mountains.</p>
+                <div class="extra-images">
+                    <img src="Banaue terraces 1.jpg" alt="Banaue terraces 1">
+                    <img src="Banaue terraces 2.jfif" alt="Banaue terraces 2">
+                    <img src="Banaue terraces 3.jfif" alt="Banaue terraces 3">
+                </div>
+            </div>
+
+            <div class="destination">
+                <img src="Palawan.jpg" alt="Palawan">
+                <h3>Palawan</h3>
+                <p>Discover the stunning beauty of Palawan, home to breathtaking beaches, crystal-clear waters, and incredible diving spots.</p>
+                <div class="extra-images">
+                    <img src="Elnido.jpeg" alt="El Nido">
+                    <img src="coron.jpg" alt="Coron">
+                    <img src="Undergroundriver.jfif" alt="Underground River">
+                </div>
+            </div>
+
+            <div class="destination">
+                <img src="choco1.jpg" alt="Chocolate Hills">
+                <h3>Chocolate Hills</h3>
+                <p>Experience one of the most unique geological formations in the world, located in Bohol, with over 1,200 symmetrical hills.</p>
+            </div>
+
+            <div class="destination">
+                <img src="Boracay.jpg" alt="Boracay">
+                <h3>Boracay</h3>
+                <p>Relax on the world-renowned white sand beaches of Boracay, famous for its stunning views and lively nightlife.</p>
+            </div>
+
+            <div class="destination">
+                <img src="Taal Volcano.jpeg" alt="Taal Volcano">
+                <h3>Taal Volcano</h3>
+                <p>Visit Taal Volcano, one of the most active volcanoes in the Philippines, located in beautiful Taal Lake.</p>
+            </div>
+
+            <div class="destination">
+                <img src="Siargao.jpg" alt="Siargao">
+                <h3>Siargao</h3>
+                <p>Enjoy the island vibes and surf culture of Siargao, known for its clear blue waters and stunning lagoons.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Travel With Me! Expeditions. All rights reserved.</p>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button onclick="scrollToTop()" id="scrollTopBtn" title="Go to top">↑ Top</button>
+
+    <!-- JavaScript -->
+    <script>
+        // Show button on scroll
+        window.onscroll = function() {
+            let btn = document.getElementById("scrollTopBtn");
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                btn.style.display = "block";
+            } else {
+                btn.style.display = "none";
+            }
+        };
+
+        // Smooth scroll to top
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact | Travel With Me Expeditions</title>
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <style>
+    body {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 1.5em 0;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav li {
+      margin-right: 30px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1em;
+      text-transform: uppercase;
+      font-weight: 600;
+      letter-spacing: 1px;
+      padding: 5px 10px;
+      transition: color 0.3s ease, background-color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #f0a500;
+      background-color: #444;
+      border-radius: 5px;
+    }
+
+    .logo img {
+      max-width: 150px;
+      height: auto;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    h2 {
+      color: #444;
+    }
+
+    p, ul {
+      text-align: left;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    .contact-form label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .contact-form button {
+      background-color: #f0a500;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+
+    .contact-form button:hover {
+      background-color: #d78d00;
+    }
+
+    iframe {
+      width: 100%;
+      height: 300px;
+      border-radius: 10px;
+      border: none;
+      margin-top: 20px;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      margin-top: 20px;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+      }
+
+      .nav-links {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .nav-links li {
+        margin: 10px 0;
+      }
+
+      .container {
+        width: 90%;
+        padding: 15px;
+      }
+
+      .contact-form label {
+        font-size: 0.9em;
+      }
+
+      .contact-form input,
+      .contact-form textarea {
+        font-size: 0.9em;
+      }
+
+      iframe {
+        height: 250px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      nav a {
+        font-size: 0.9em;
+      }
+
+      .contact-form button {
+        font-size: 14px;
+      }
+
+      .container {
+        margin: 20px;
+        padding: 10px;
+      }
+
+      iframe {
+        height: 200px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul class="nav-links left">
+        <li><a href="index.html">About</a></li>
+        <li><a href="Destinations.html">Destinations</a></li>
+      </ul>
+      <div class="logo">
+        <a href="STATIC WEBSITE DEVELOPMENT.html">
+          <img src="TravelWIthMe!LOGO.png" alt="Travel With Me Logo">
+        </a>
+      </div>
+      <ul class="nav-links right">
+        <li><a href="Privacy Policy.html">Privacy Policy</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container" id="contact">
+    <h2>Get in Touch</h2>
+    <p><strong>Email:</strong> <a href="mailto:jeff.fernandez0711@gmail.com">jeff.fernandez0711@gmail.com</a></p>
+    <p><strong>Phone:</strong> +63 9309130501</p>
+    <p><strong>Address:</strong> 123 Travel Street, Baguio City, Philippines</p>
+
+    <!-- Contact Form -->
+    <form class="contact-form" id="contact-form">
+      <label for="name">Your Name</label>
+      <input id="name" type="text" name="name" required>
+
+      <label for="email">Your Email</label>
+      <input id="email" type="email" name="email" required>
+
+      <label for="message">Your Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+
+    <!-- Google Maps Embed -->
+    <iframe src="https://www.google.com/maps/embed/v1/place?q=Manila,Philippines&key=YOUR_API_KEY" allowfullscreen></iframe>
+  </div>
+
+  <footer>
+    &copy; 2025 Travel With Me Expeditions. All rights reserved.
+  </footer>
+
+  <script>
+    // Initialize EmailJS
+    (function() {
+      emailjs.init('YOUR_USER_ID'); // Replace 'YOUR_USER_ID' with your EmailJS user ID
+    })();
+
+    // Handle form submission
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent form from submitting the traditional way
+
+      const form = event.target;
+      const formData = new FormData(form);
+
+      // Send form data to EmailJS
+      emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', formData)
+        .then(function(response) {
+          alert('Your message has been sent successfully!');
+          form.reset(); // Reset the form after successful submission
+        })
+        .catch(function(error) {
+          alert('There was an error sending your message. Please try again later.');
+        });
+    });
+  </script>
+
+</body>
+</html>
